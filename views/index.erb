@@ -2,10 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Sugar and Spice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Englebert">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <%= erb :"partials/header" %>
+    <div class="cake">
+      <img src='<%= @chocolate.image %>'>
+      <%= @chocolate.price %>
+      <%= @chocolate.description %>
 
+      <img src='<%= @chocolate.image %>'>
+      <%= @chocolate.price %>
+      <%= @chocolate.description %>
+
+      <img src='<%= @chocolate.image %>'>
+      <%= @chocolate.price %>
+      <%= @chocolate.description %> 
+    </div>
   </body>
 </html>
