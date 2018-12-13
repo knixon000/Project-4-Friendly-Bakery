@@ -10,18 +10,49 @@
   </head>
   <body>
     <%= erb :"partials/header" %>
-    <div class="cake">
-      <img src='<%= @chocolate.image %>'>
-      <%= @chocolate.price %>
-      <%= @chocolate.description %>
+    <br>
+    <div class="container">
+      <div class="row">
 
-      <img src='<%= @chocolate.image %>'>
-      <%= @chocolate.price %>
-      <%= @chocolate.description %>
+        <div class="col">
+          <div class="card mb-3">
+            <img class="card-img-top" src='<%= @chocolate.image %>'>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"><%= @chocolate.description %></p>
+              <p class="card-text"><small class="text-muted"><%= @chocolate.price %></small></p>
+            </div>
+          </div>
+        </div>
 
-      <img src='<%= @chocolate.image %>'>
-      <%= @chocolate.price %>
-      <%= @chocolate.description %> 
+        <div class="col">
+          <div class="card mb-3">
+            <img class="card-img-top" src='<%= @chocchip.image %>'>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"><%= @chocchip.description %></p>
+              <p class="card-text"><small class="text-muted"><%= @chocchip.price %></small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card mb-3">
+            <img class="card-img-top" src='<%= @muffin.image %>'>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text"><%= @muffin.description %></p>
+              <p class="card-text"><small class="text-muted"><%= @muffin.price %></small></p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
     </div>
+
   </body>
 </html>

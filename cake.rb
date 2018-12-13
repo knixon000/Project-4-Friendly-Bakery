@@ -5,9 +5,4 @@ class Cake
     @price = price
     @description = description
   end
-  # def show_cake
-  #   return @image
-  #   return @price
-  #   return @description
-  # end
 end
