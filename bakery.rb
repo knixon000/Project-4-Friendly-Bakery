@@ -24,18 +24,16 @@ end
 
 get '/cookies' do
   # @vanilla = Cake.new('vancake.jpg', '$35', 'snlnsnklc kscj bjc bkc')
-  @chocchip2 = Cake.new('chocchip2.jpg', 'Chocolate Chip','$1.50 per cookie')
-  @pb = Cake.new('pb.jpg', 'Peanut Butter','$1.50 per cookie')
+  @chocchip2 = Cake.new('chocchip2.jpeg', 'Chocolate Chip','$1.50 per cookie')
+  @pb = Cake.new('pb.jpeg', 'Peanut Butter','$1.50 per cookie')
   @iced = Cake.new('iced.jpg', 'Iced Oatmeal','$1.50 per cookie')
   # @spice = Cake.new()
   erb :cookies
 end
 
 get '/muffins' do
-  # @vanilla = Cake.new('vancake.jpg', '$35', 'snlnsnklc kscj bjc bkc')
-  @redvelvet = Cake.new('redvelvet.jpg', 'Red Velvet','$3.50 per slice, $20.99 for 12in round')
-  @bluevelvet = Cake.new('bluevelvet.jpg', 'Blue Velvet','$3.50 per slice, $20.99 for 12in round')
-  @carrot = Cake.new('carcake.jpg', 'Carrot Cake', '$3.50 per slice')
-  # @spice = Cake.new()
+  @chocchip2 = Cake.new('chocchip2.jpeg', 'Chocolate Chip','$2.50 per muffin')
+  @pb = Cake.new('pb.jpeg', 'Peanut Butter','$2.50 per muffin')
+  @iced = Cake.new('iced.jpg', 'Iced Oatmeal','$2.50 per muffin')
   erb :muffins
 end
