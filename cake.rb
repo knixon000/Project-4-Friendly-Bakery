@@ -1,8 +1,8 @@
 class Cake
-  attr_accessor :image, :price, :description
-  def initialize(image, price, description)
+  attr_accessor :image, :name, :price
+  def initialize(image, name, price)
     @image = image
+    @name = name
     @price = price
-    @description = description
   end
 end

@@ -5,7 +5,6 @@
 
 body {
   font-family: 'Englebert', sans-serif;
-
 }
 
 header {
@@ -17,7 +16,7 @@ header {
 }
 
 header h1 {
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 0px;
   font-size: 90px;
   color: skyblue;
@@ -32,6 +31,7 @@ header h1 {
 
 ul {
   list-style-type: none;
+  margin-top: 200px;
 }
 
 li {
@@ -44,7 +44,26 @@ div {
   height: 400px;
 }
 
-/* .product {
-  width: 20%;
-  height: 20%;
-} */
+a:hover {
+  text-decoration: none;
+
+}
+
+#cake {
+  background-image: url(cakes.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#cakes {
+  padding-top: 200px;
+  padding-left: 60px;
+  float: left;
+  font-size: 90px;
+  color: #25B7BD;
+}
+
+h2 {
+  text-align: center;
+}
